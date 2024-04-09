@@ -18,7 +18,7 @@ const MainNav = () => {
         data-bs-theme="dark"
       >
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img
               alt=""
               src="/larry.png"
