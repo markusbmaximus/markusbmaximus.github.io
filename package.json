@@ -1,6 +1,7 @@
 {
   "name": "larrygames.au",
   "version": "0.1.0",
+  "homepage": "https://larrygames.au",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
