@@ -4,7 +4,7 @@ import { zeroPad } from "../../common-functions";
 import { useQuery } from "react-query";
 
 const getBotInfo = async () => {
-  return await fetch("https://larry.larrygames.au:8080/info")
+  return await fetch("https://api.larrygames.au/info")
     .then((response) => response.json())
     .then((data) => {
       return data;
