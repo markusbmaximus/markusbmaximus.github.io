@@ -28,7 +28,7 @@ function Charts() {
   if (error || !info) {
     console.error("Unable to load chart information.");
 
-    return <></>;
+    return <>Cannot display this page.</>;
   } else {
     let outputRows: any = {};
     if (info.players.length < 1) {
