@@ -94,7 +94,9 @@ function Charts() {
         return (
           <tr>
             <td>{k + 1}</td>
-            <td>{help[g[0]].nicename}</td>
+            <td>
+              {help[g[0]] && help[g[0]].nicename ? help[g[0]].nicename : g[0]}
+            </td>
             <td>{g[1]}</td>
           </tr>
         );
