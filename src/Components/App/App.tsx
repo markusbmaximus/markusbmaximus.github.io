@@ -6,17 +6,17 @@ import Container from "react-bootstrap/Container";
 import BotStatus from "../BotStatus/BotStatus";
 import MainNav from "../Nav/Nav";
 import Charts from "../Charts/Charts";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <MainNav />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/charts" element={<Charts />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 

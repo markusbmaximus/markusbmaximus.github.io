@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "bootswatch/dist/cyborg/bootstrap.min.css";
 import App from "./Components/App/App";
 import reportWebVitals from "./reportWebVitals";
+import { HashRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 const queryClient = new QueryClient();
 
@@ -13,7 +14,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App />
+      <HashRouter>
+        <App />
+      </HashRouter>
     </QueryClientProvider>
   </React.StrictMode>
 );
