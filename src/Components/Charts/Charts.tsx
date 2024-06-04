@@ -7,7 +7,7 @@ import { useQuery } from "react-query";
 import Table from "react-bootstrap/Table";
 
 const getChartInfo = async () => {
-  return await fetch("http://localhost:8080/charts")
+  return await fetch("https://api.larrygames.au/charts")
     .then((response) => response.json())
     .then((data) => {
       return data.data;
@@ -15,7 +15,7 @@ const getChartInfo = async () => {
 };
 
 const getHelpInfo = async () => {
-  return await fetch("http://localhost:8080/help")
+  return await fetch("https://api.larrygames.au/help")
     .then((response) => response.json())
     .then((data) => {
       return data.help;
