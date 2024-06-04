@@ -4,7 +4,11 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faPatreon } from "@fortawesome/free-brands-svg-icons";
-import { faRobot, faCheckToSlot } from "@fortawesome/free-solid-svg-icons";
+import {
+  faRobot,
+  faCheckToSlot,
+  faChartLine,
+} from "@fortawesome/free-solid-svg-icons";
 import DefaultValues from "../../defaultValues.json";
 
 const MainNav = () => {
@@ -31,6 +35,9 @@ const MainNav = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
+              <Nav.Link href="/charts">
+                <FontAwesomeIcon icon={faChartLine} /> Top Charts
+              </Nav.Link>
               <Nav.Link href="https://top.gg/bot/1026495225759277146/vote">
                 <FontAwesomeIcon icon={faCheckToSlot} /> Vote
               </Nav.Link>

@@ -1,15 +1,28 @@
 import GameInfo from "../GameInfo/GameInfo";
 import MainContent from "../MainContent/MainContent";
-import MainNav from "../Nav/Nav";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import BotStatus from "../BotStatus/BotStatus";
+import MainNav from "../Nav/Nav";
+import Charts from "../Charts/Charts";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <MainNav />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/charts" element={<Charts />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+const MainPage = () => {
+  return (
+    <div className="App">
       <Container>
         <Row>
           <Col className="text-center">
@@ -44,6 +57,6 @@ function App() {
       <MainContent />
     </div>
   );
-}
+};
 
 export default App;
